@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace Program
 {
-    class Program
+    class Exercicio1
     {
         /* Fazer método que recebe um vetor de número inteiros e retorna a soma dos
         números impares. */
         static void Main(string[] args)
         {
             int[] v = { 102, 57, 78, 23, 39 };
-            int[] impares = new int[4];
+            int[] impares = new int[5];
 
             for (int i = 0; i < 5; i++)
             {
@@ -22,15 +22,19 @@ namespace ConsoleApp1
                     impares[i] = v[i];
                 }
             }
-            //Array.Sort(v);
-            //Console.WriteLine("O Menor numero é: ");
-            //Console.WriteLine(v[0]);
+
+            int resultado = SomaImpar(impares);
+            Console.WriteLine("A soma dos numeros impares é de: " + resultado);
         }
 
-        public static int Vetor()
+        public static int SomaImpar (int[] vetor)
         {
-            return;
+            int soma = 0;
+            for (int i = 0; i < 5; i++)
+            {
+                soma = soma + vetor[i];
+            }
+            return soma;
         }
-
     }
 }
