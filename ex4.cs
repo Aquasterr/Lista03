@@ -21,11 +21,5 @@ namespace ConsoleApp1
             Console.WriteLine("O Menor numero é: ");
             Console.WriteLine(v[0]);
         }
-
-        public static double Fahrenheit(double c)
-        {
-            double fahren = (9 * c + 160) / 5;
-            return fahren;
-        }
     }
 }
